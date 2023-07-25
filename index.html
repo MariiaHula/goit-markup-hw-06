@@ -634,12 +634,11 @@
 
         <form class="review-form">
           <div class="review-form-wrapper">
-            <label class="review-form-field" for="user_name">Name</label>
-
+            <label class="review-form-field" for="user-name">Name</label>
             <div class="reviev-form-input-wrapper">
               <input
                 class="reviev-form-input"
-                id="user_name"
+                id="user-name"
                 type="text"
                 name="fullname"
                 required
@@ -651,11 +650,11 @@
           </div>
 
           <div class="review-form-wrapper">
-            <label class="review-form-field" for="user_phone">Phone</label>
+            <label class="review-form-field" for="user-phone">Phone</label>
             <div class="reviev-form-input-wrapper">
               <input
                 class="reviev-form-input"
-                id="user_phone"
+                id="user-phone"
                 type="tel"
                 name="phone"
                 required
@@ -667,11 +666,11 @@
           </div>
 
           <div class="review-form-wrapper">
-            <label class="review-form-field" for="user_email">Email</label>
+            <label class="review-form-field" for="user-email">Email</label>
             <div class="reviev-form-input-wrapper">
               <input
                 class="reviev-form-input"
-                id="user_email"
+                id="user-email"
                 type="email"
                 name="email"
                 required
@@ -684,10 +683,10 @@
 
           <!-- textarea -->
           <div class="review-form-massage-wrapper">
-            <label class="review-form-field" for="user_comment">Comment</label>
+            <label class="review-form-field" for="user-comment">Comment</label>
             <textarea
               class="review-form-massage"
-              id="user_comment"
+              id="user-comment"
               name="massage"
               placeholder="Text input"
             ></textarea>
@@ -695,20 +694,17 @@
           <!-- checkbox -->
           <div class="review-form-checkbox-wrapper">
             <input
-              class="visually-hidden"
-              id="user_privacy"
+              class="visually-hidden review-form-checkbox-input"
+              id="user-privacy"
               type="checkbox"
               value="true"
-              name="policy"
+              name="user-privacy"
               required
             />
-            <label class="review-form-checkbox" for="user_privacy"
+            <label class="review-form-checkbox" for="user-privacy"
               ><span class="review-form-checkbox-icon">
                 <svg width="10" height="8" aria-label="Accept">
-                  <use
-                    href="./images/icons.svg#icon-vector"
-                    class="review-form-checkbox-icon-vector"
-                  ></use>
+                  <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the&nbsp;

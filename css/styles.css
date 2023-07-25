@@ -953,28 +953,26 @@ address {
   border-radius: 2px;
   fill: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  transition-property: display, border, bacground-color;
+  background-color: var(--pressed-state);
+  transition-property: bacground-color;
   transition-duration: var(--transition-dur);
   transition-timing-function: var(--transition-func);
 }
 
-.review-form-checkbox-icon-vector {
-  display: none;
-}
-
-.review-form-checkbox-icon:checked {
+.review-form-checkbox-input:checked .review-form-checkbox-icon {
   background-color: var(--pressed-state);
   border: none;
   fill: var(--white-background);
 }
 
-.review-form-checkbox-icon:checked + .review-form-checkbox-icon {
+/* .review-form-checkbox-input:checked + .review-form-checkbox-icon {
   background-color: var(--pressed-state);
   border: none;
 }
-.review-form-checkbox-icon:checked + .review-form-checkbox-icon use {
+.review-form-checkbox-input:checked + .review-form-checkbox-icon use {
   display: block;
-}
+} */
+
 .review-form-policy-link {
   color: var(--primary-brand);
 }
@@ -983,7 +981,7 @@ address {
   display: block;
   margin: 0 auto;
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   border-radius: 4px;
   background-color: var(--primary-brand);
