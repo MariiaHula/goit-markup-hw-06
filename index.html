@@ -599,22 +599,25 @@
         </div>
         <div class="footer-subscribe-block">
           <form class="footer-subscribe-form">
-            <div class="footer-subscribe-form-label">
-              <label class="subscribe-form-label"> Subscribe</label>
-            </div>
-            <div class="footer-subscribe-form-input">
-              <input
-                class="subscribe-form-input"
-                type="email"
-                name="user_email"
-                placeholder="E-mail"
-              />
-              <button type="submit" class="subscribe-button">
-                Subscribes
-                <svg class="subscribe-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-icon-send"></use>
-                </svg>
-              </button>
+            <div class="footer-subscribe-block">
+              <p class="subscribe-form-text">Subscribe</p>
+
+              <form class="footer-subscribe-form">
+                <label class="subscribe-form-label">
+                  <input
+                    class="subscribe-form-input"
+                    type="email"
+                    name="user_email"
+                    placeholder="E-mail"
+                  />
+                  <button type="submit" class="subscribe-button">
+                    Subscribes
+                    <svg class="subscribe-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-icon-send"></use>
+                    </svg>
+                  </button>
+                </label>
+              </form>
             </div>
           </form>
         </div>
@@ -635,11 +638,12 @@
 
         <form class="review-form">
           <div class="review-form-wrapper">
-            <label class="review-form-field">Name</label>
+            <label class="review-form-field" for="user-name">Name</label>
 
             <div class="reviev-form-input-wrapper">
               <input
                 class="reviev-form-input"
+                id="user-name"
                 type="text"
                 name="user_name"
                 required
@@ -651,10 +655,11 @@
           </div>
 
           <div class="review-form-wrapper">
-            <label class="review-form-field">Phone</label>
+            <label class="review-form-field" for="user-phone">Phone</label>
             <div class="reviev-form-input-wrapper">
               <input
                 class="reviev-form-input"
+                id="user-phone"
                 type="tel"
                 name="user_phone"
                 required
@@ -666,10 +671,11 @@
           </div>
 
           <div class="review-form-wrapper">
-            <label class="review-form-field">Email</label>
+            <label class="review-form-field" for="user-email">Email</label>
             <div class="reviev-form-input-wrapper">
               <input
                 class="reviev-form-input"
+                id="user-email"
                 type="email"
                 name="user_email"
                 required
@@ -682,36 +688,37 @@
 
           <!-- textarea -->
           <div class="review-form-massage-wrapper">
-            <label class="review-form-field">Comment</label>
+            <label class="review-form-field" for="user-comment">Comment</label>
             <textarea
               class="review-form-massage"
+              id="user-comment"
               name="user_massage"
               placeholder="Text input"
             ></textarea>
           </div>
           <!-- checkbox -->
-
-          <label class="review-form-checkbox">
+          <div class="review-form-checkbox-wrapper">
             <input
-              class="review-form-checkbox-polisy"
+              class="visually-hidden"
+              id="user-privacy"
               type="checkbox"
+              value="true"
               name="user_polisy"
               required
             />
-            <svg
-              class="review-form-checkbox-icon"
-              width="10"
-              height="8"
-              aria-label="Accept"
-            >
-              <use
-                href="./images/icons.svg#icon-vector"
-                class="review-form-checkbox-icon-vector"
-              ></use>
-            </svg>
-            I accept the terms and conditions of the&nbsp;
-            <a href="" class="review-form-policy-link">Privacy Policy</a>
-          </label>
+            <label class="review-form-checkbox" for="user-privacy"
+              ><span class="review-form-checkbox-icon">
+                <svg width="10" height="8" aria-label="Accept">
+                  <use
+                    href="./images/icons.svg#icon-vector"
+                    class="review-form-checkbox-icon-vector"
+                  ></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the&nbsp;
+              <a href="" class="review-form-policy-link">Privacy Policy</a>
+            </label>
+          </div>
 
           <button type="submit" class="review-form-btn">Send</button>
         </form>
