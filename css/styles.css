@@ -690,6 +690,10 @@ address {
   transform: translate(-50%, -50%);
   width: 408px;
   min-height: 584px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 72px;
+  padding-bottom: 24px;
   transition-property: transform;
   transition-duration: var(--transition-dur);
   transition-timing-function: var(--transition-func);
@@ -735,4 +739,171 @@ address {
 .close-button:hover .close-back-icon,
 .close-button:focus .close-back-icon {
   fill: var(--white-background);
+}
+
+/* ==========REVIEW FORM=========== */
+
+.review-form-text {
+  display: block;
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: var(--dark);
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.review-form-wrapper {
+  margin-bottom: 8px;
+}
+.reviev-form-input-wrapper {
+  position: relative;
+}
+
+.review-form-field {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.48px;
+  color: var(--subtle-text);
+}
+
+.review-form-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+.reviev-form-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding-left: 38px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.48px;
+  color: var(--dark);
+  background-color: transparent;
+  border: 1px solid var(--subtle-text, rgba(46, 47, 66, 0.4));
+  border-radius: 4px;
+  transition-property: outline-color;
+  transition-duration: var(--transition-dur);
+  transition-timing-function: var(--transition-func);
+}
+
+.review-form-input-icon {
+  transition-property: fill;
+  transition-duration: var(--transition-dur);
+  transition-timing-function: var(--transition-func);
+}
+.reviev-form-input:focus {
+  outline-color: var(--primary-brand);
+}
+.reviev-form-input:focus + .review-form-input-icon {
+  fill: var(--primary-brand);
+}
+.review-form-massage-wrapper {
+  margin-bottom: 16px;
+}
+.review-form-massage {
+  display: block;
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding-left: 16px;
+  padding-top: 8px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.48px;
+  color: var(--subtle-text);
+  border-radius: 4px;
+  border: 1px solid var(--subtle-text, rgba(46, 47, 66, 0.4));
+  transition-property: outline-color;
+  transition-duration: var(--transition-dur);
+  transition-timing-function: var(--transition-func);
+}
+
+.review-form-massage:focus {
+  outline-color: var(--primary-brand);
+}
+/* =============CHECKBOX================= */
+.review-form-checkbox {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.48px;
+  color: var(--subtle-text);
+  margin-bottom: 24px;
+}
+
+.review-form-policy-link {
+  line-height: 1.33;
+  color: var(--primary-brand);
+}
+
+.review-form-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 16px 32px;
+  width: 170px;
+  height: 56px;
+  border-radius: 4px;
+  background-color: var(--primary-brand);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  color: var(--white-background);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  border: none;
+  transition-property: background-color;
+  transition-duration: var(--transition-dur);
+  transition-timing-function: var(--transition-func);
+}
+
+.review-form-btn:focus,
+.review-form-btn:hover {
+  background-color: var(--pressed-state);
+}
+
+.review-form-checkbox-icon {
+  width: 16px;
+  height: 16px;
+  padding: 3px;
+  border-radius: 2px;
+  border: 1px solid var(--subtle-text, rgba(46, 47, 66, 0.4));
+  transition-property: display, border, bacground-color;
+  transition-duration: var(--transition-dur);
+  transition-timing-function: var(--transition-func);
+}
+
+.review-form-checkbox-icon-vector {
+  display: none;
+}
+
+.review-form-checkbox-polisy:checked + .review-form-checkbox-icon {
+  background-color: var(--pressed-state);
+  border: var(--pressed-state);
+}
+.review-form-checkbox-polisy:checked + .review-form-checkbox-icon use {
+  display: block;
 }
