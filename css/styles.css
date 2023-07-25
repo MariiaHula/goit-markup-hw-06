@@ -696,7 +696,7 @@ address {
   margin-right: 24px;
   font-size: 12px;
   font-weight: 400;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--white-background);
   background-color: transparent;
@@ -983,7 +983,7 @@ address {
   display: block;
   margin: 0 auto;
   padding: 16px 32px;
-  width: 170px;
+  width: 169px;
   height: 56px;
   border-radius: 4px;
   background-color: var(--primary-brand);
