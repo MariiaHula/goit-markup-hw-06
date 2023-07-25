@@ -934,7 +934,7 @@ address {
 }
 
 .review-form-checkbox {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-size: 12px;
   font-weight: 400;
@@ -959,7 +959,7 @@ address {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.review-form-checkbox-input:checked .review-form-checkbox-icon {
+.review-form-checkbox-input:checked + .review-form-checkbox-icon {
   background-color: var(--pressed-state);
   border: none;
   fill: var(--light);
