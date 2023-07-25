@@ -962,7 +962,7 @@ address {
 .review-form-checkbox-input:checked .review-form-checkbox-icon {
   background-color: var(--pressed-state);
   border: none;
-  fill: var(--white-background);
+  fill: var(--light);
 }
 
 /* .review-form-checkbox-input:checked + .review-form-checkbox-icon {
