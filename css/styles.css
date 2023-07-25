@@ -884,7 +884,9 @@ address {
 .review-form-btn:hover {
   background-color: var(--pressed-state);
 }
-
+.review-form-checkbox-polisy {
+  appearance: none;
+}
 .review-form-checkbox-icon {
   width: 16px;
   height: 16px;
