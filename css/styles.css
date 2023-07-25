@@ -682,7 +682,8 @@ address {
 }
 
 .subscribe-form-label {
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
 .subscribe-form-input {
