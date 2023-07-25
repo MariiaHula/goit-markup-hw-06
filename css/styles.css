@@ -876,9 +876,10 @@ address {
   letter-spacing: 0.48px;
   color: var(--dark);
   background-color: transparent;
-  border: 1px solid var(--subtle-text, rgba(46, 47, 66, 0.4));
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  outline: transparent;
   border-radius: 4px;
-  transition-property: outline-color;
+  transition-property: border-color;
   transition-duration: var(--transition-dur);
   transition-timing-function: var(--transition-func);
 }
@@ -889,7 +890,7 @@ address {
   transition-timing-function: var(--transition-func);
 }
 .reviev-form-input:focus {
-  outline-color: var(--primary-brand);
+  border-color: var(--primary-brand);
 }
 .reviev-form-input:focus + .review-form-input-icon {
   fill: var(--primary-brand);
@@ -951,7 +952,7 @@ address {
   margin-right: 8px;
   border-radius: 2px;
   fill: transparent;
-  border: 1px solid var(--subtle-text, rgba(46, 47, 66, 0.4));
+  border: 1px solid rgba(46, 47, 66, 0.4);
   transition-property: display, border, bacground-color;
   transition-duration: var(--transition-dur);
   transition-timing-function: var(--transition-func);
@@ -959,6 +960,12 @@ address {
 
 .review-form-checkbox-icon-vector {
   display: none;
+}
+
+.review-form-checkbox-icon:checked {
+  background-color: var(--pressed-state);
+  border: none;
+  fill: var(--white-background);
 }
 
 .review-form-checkbox-icon:checked + .review-form-checkbox-icon {
