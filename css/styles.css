@@ -954,9 +954,9 @@ address {
   fill: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: var(--pressed-state);
-  transition-property: bacground-color;
-  transition-duration: var(--transition-dur);
-  transition-timing-function: var(--transition-func);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-form-checkbox-input:checked .review-form-checkbox-icon {
