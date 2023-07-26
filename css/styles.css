@@ -925,6 +925,7 @@ address {
 /* =============CHECKBOX================= */
 
 .review-form-checkbox-wrapper {
+  position: relative;
   margin-bottom: 24px;
 }
 
@@ -934,8 +935,6 @@ address {
 }
 
 .review-form-checkbox {
-  display: inline-flex;
-  align-items: center;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.17;
@@ -954,30 +953,16 @@ address {
   border-radius: 2px;
   fill: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  background-color: var(--pressed-state);
   transition-property: background-color, border, fill;
   transition-duration: var(--transition-dur);
   transition-timing-function: var(--transition-func);
 }
-.review-form-checkbox-icon use {
-  fill: var(--light);
-}
-.visually-hidden:checked
-  + .review-form-checkbox
-  + .review-form-checkbox-icon
-  + use {
-  background-color: var(--pressed-state);
-  border: none;
-  fill: var(--light);
-}
 
-/* .review-form-checkbox-input:checked + .review-form-checkbox-icon {
+.review-form-checkbox:checked + .review-form-checkbox-icon + use {
   background-color: var(--pressed-state);
   border: none;
+  fill: var(--light);
 }
-.review-form-checkbox-input:checked + .review-form-checkbox-icon use {
-  display: block;
-} */
 
 .review-form-policy-link {
   color: var(--primary-brand);
