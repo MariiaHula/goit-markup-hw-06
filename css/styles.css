@@ -942,6 +942,7 @@ address {
   letter-spacing: 0.04em;
   color: var(--subtle-text);
 }
+
 .review-form-checkbox-icon {
   display: inline-flex;
   justify-content: center;
@@ -954,14 +955,17 @@ address {
   fill: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: var(--pressed-state);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, border, fill;
+  transition-duration: var(--transition-dur);
+  transition-timing-function: var(--transition-func);
 }
-
-.review-form-checkbox-input:checked
+.review-form-checkbox-icon use {
+  fill: var(--light);
+}
+.visually-hidden:checked
   + .review-form-checkbox
-  + .review-form-checkbox-icon {
+  + .review-form-checkbox-icon
+  + use {
   background-color: var(--pressed-state);
   border: none;
   fill: var(--light);
