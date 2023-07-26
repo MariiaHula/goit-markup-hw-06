@@ -892,8 +892,16 @@ address {
 .reviev-form-input:focus {
   border-color: var(--primary-brand);
 }
-.reviev-form-input:focus + .review-form-input-icon {
-  fill: var(--primary-brand);
+
+.checkbox:checked + .review-form-checkbox > .review-form-checkbox-icon {
+background-color: var(--pressed-state);
+border: none;
+fill: var(--light);
+}
+
+
+/* .reviev-form-input:focus + .review-form-input-icon {
+  fill: var(--primary-brand); */
 }
 .review-form-massage-wrapper {
   margin-bottom: 16px;
@@ -948,7 +956,6 @@ address {
   align-items: center;
   width: 16px;
   height: 16px;
-  padding: 3px;
   margin-right: 8px;
   border-radius: 2px;
   fill: transparent;
